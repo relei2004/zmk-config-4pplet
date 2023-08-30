@@ -29,6 +29,16 @@
             bindings = <&kp RIGHT_ARROW>;
             key-positions = <63 38>;
         };
+
+        myhome {
+            bindings = <&kp HOME>;
+            key-positions = <21 63>;
+        };
+
+        mylast {
+            bindings = <&kp END>;
+            key-positions = <63 22>;
+        };
     };
 
     keymap {
