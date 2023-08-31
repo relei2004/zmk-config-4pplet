@@ -18,26 +18,31 @@
         vimdown {
             bindings = <&kp DOWN_ARROW>;
             key-positions = <63 36>;
+            layers = <0>;
         };
 
         vimup {
             bindings = <&kp UP_ARROW>;
-            key-positions = <63 37>;
+            key-positions = <37 63>;
+            layers = <0>;
         };
 
         vimright {
             bindings = <&kp RIGHT_ARROW>;
             key-positions = <63 38>;
+            layers = <0>;
         };
 
         myhome {
             bindings = <&kp HOME>;
             key-positions = <21 63>;
+            layers = <0>;
         };
 
         mylast {
             bindings = <&kp END>;
             key-positions = <63 22>;
+            layers = <0>;
         };
     };
 
