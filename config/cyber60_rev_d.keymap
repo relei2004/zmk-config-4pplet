@@ -82,11 +82,11 @@
             // | Rotary | (<-- Rotary switch) ----------------------------------------------------------- 
 
             bindings = <
-&sys_reset   &kp F1    &kp F2           &kp F3           &kp F4           &kp F5           &kp F6           &kp F7           &kp F8           &kp F9  &kp F10  &kp F11  &kp F12  &kp DELETE  &kp DEL
-&bt BT_CLR   &trans    &kp UP           &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans           &trans  &trans   &trans   &trans   &trans
-&bootloader  &kp LEFT  &kp DOWN         &kp RIGHT        &trans           &trans           &trans           &trans           &trans           &trans  &trans   &trans   &trans   &trans
-&trans       &trans    &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans  &trans   &trans   &trans   &trans
-&trans       &trans    &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans
+&sys_reset   &kp F1    &kp F2           &kp F3           &kp F4           &kp F5           &kp F6           &kp F7           &kp F8           &kp F9     &kp F10  &kp F11  &kp F12       &kp DELETE  &kp DEL
+&bt BT_CLR   &trans    &kp UP           &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans           &trans     &trans   &trans   &trans        &trans
+&bootloader  &kp LEFT  &kp DOWN         &kp RIGHT        &trans           &trans           &kp LEFT         &kp DOWN         &kp UP_ARROW     &kp RIGHT  &trans   &trans   &trans        &trans
+&trans       &trans    &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans     &trans   &trans   &kp UP_ARROW  &trans
+&trans       &trans    &trans           &trans           &trans           &trans           &trans           &kp LEFT         &kp DOWN_ARROW   &kp RIGHT
 &kp C_PP
             >;
 
@@ -95,26 +95,15 @@
 
         layer_2 {
             bindings = <
-&trans  &trans                    &trans  &trans     &trans  &trans  &trans          &kp RA(N7)      &kp RA(N8)    &kp RA(N9)       &kp RA(N0)  &kp RA(MINUS)  &trans        &kp DELETE  &trans
-&trans  &kp RA(Q)                 &trans  &kp RA(E)  &trans  &trans  &kp HOME        &kp END         &trans        &trans           &trans      &trans         &kp RA(RBKT)  &trans
-&trans  &trans                    &trans  &trans     &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans      &trans         &trans        &trans
-&trans  &kp RA(NON_US_BACKSLASH)  &trans  &trans     &trans  &trans  &trans          &trans          &trans        &trans           &trans      &trans         &trans        &trans
-&trans  &trans                    &trans  &trans     &trans  &trans  &trans          &trans          &trans        &trans
+&trans  &trans                    &trans        &trans     &trans  &trans  &trans          &kp RA(N7)      &kp RA(N8)      &kp RA(N9)       &kp RA(N0)  &kp RA(MINUS)  &trans        &kp DELETE  &trans
+&trans  &kp RA(Q)                 &kp UP_ARROW  &kp RA(E)  &trans  &trans  &kp HOME        &kp END         &trans          &trans           &trans      &trans         &kp RA(RBKT)  &trans
+&trans  &kp LEFT                  &kp DOWN      &kp RIGHT  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans      &trans         &trans        &trans
+&trans  &kp RA(NON_US_BACKSLASH)  &trans        &trans     &trans  &trans  &trans          &trans          &trans          &trans           &trans      &trans         &kp UP_ARROW  &trans
+&trans  &trans                    &trans        &trans     &trans  &trans  &trans          &kp LEFT        &kp DOWN_ARROW  &kp RIGHT
 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans
-            >;
         };
     };
 };
