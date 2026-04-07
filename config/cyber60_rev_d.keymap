@@ -10,33 +10,54 @@
   default-mode = <UC_MODE_LINUX>;  // Replace with desired input system.
 };
 / {
-macros {
+/ {
+    macros {
         umlaut_ae: umlaut_ae {
             compatible = "zmk,behavior-macro";
             label = "UMLAUT_AE";
             #binding-cells = <0>;
-            bindings = <&kp RCTRL &kp DQT &kp A>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp RCTRL>
+                , <&kp DQT>
+                , <&kp A>;
         };
 
         umlaut_oe: umlaut_oe {
             compatible = "zmk,behavior-macro";
             label = "UMLAUT_OE";
             #binding-cells = <0>;
-            bindings = <&kp RCTRL &kp DQT &kp O>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp RCTRL>
+                , <&kp DQT>
+                , <&kp O>;
         };
 
         umlaut_ue: umlaut_ue {
             compatible = "zmk,behavior-macro";
             label = "UMLAUT_UE";
             #binding-cells = <0>;
-            bindings = <&kp RCTRL &kp DQT &kp U>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp RCTRL>
+                , <&kp DQT>
+                , <&kp U>;
         };
 
         umlaut_ss: umlaut_ss {
             compatible = "zmk,behavior-macro";
             label = "UMLAUT_SS";
             #binding-cells = <0>;
-            bindings = <&kp RCTRL &kp S &kp S>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp RCTRL>
+                , <&kp S>
+                , <&kp S>;
         };
 
         euro: euro {
@@ -46,6 +67,8 @@ macros {
             bindings = <&kp RCTRL &kp EQUAL &kp E>;
         };
     };
+};
+
     combos {
         compatible = "zmk,combos";
 
