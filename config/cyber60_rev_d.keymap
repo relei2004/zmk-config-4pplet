@@ -5,7 +5,7 @@
 #include <behaviors/unicode.dtsi>
 
 #define FN1 1
-#define UML 3
+#define UML 4
 &uc {
   default-mode = <UC_MODE_LINUX>;  // Replace with desired input system.
 };
@@ -128,16 +128,37 @@
             bindings = <
 &kp ESC     &kp N1    &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7  &kp N8    &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp DELETE
 &kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T      &kp Y     &kp U   &kp I     &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
-&mo 2       &kp A     &kp S     &kp D      &kp F      &kp G      &kp H     &kp J   &kp K     &kp L      &kp SEMI  &kp SQT    &kp NUHS   &kp RET
-&kp LSHFT   &kp NUBS  &kp Z     &kp X      &kp C      &kp V      &kp B     &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &tog 2
-&kp LCTRL   &kp LGUI  &kp LALT  &lt UML SPACE  &lt UML SPACE  &lt UML SPACE  &kp RALT  &mo 1   &kp RGUI  &kp RCTRL
+&mo 3       &kp A     &kp S     &kp D      &kp F      &kp G      &kp H     &kp J   &kp K     &kp L      &kp SEMI  &kp SQT    &kp NUHS   &kp RET
+&kp LSHFT   &kp NUBS  &kp Z     &kp X      &kp C      &kp V      &kp B     &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &tog 3
+&kp LCTRL   &kp LGUI  &kp LALT  &lt UML SPACE  &lt UML SPACE  &lt UML SPACE  &kp RALT  &mo 2   &kp RGUI  &kp RCTRL
 &kp C_MUTE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
+layer_1 {
+            // Base layer
+            // ------------------------------------------------------------------------------------------
+            // | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
+            // | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |NUHS| ENTER   |
+            // | SHIFT |NUBS| Z |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |    Shift   | FN |
+            // |  LCTL  |  LWIN  |  LALT  | SPACE  | SPACE |    SPACE   |  RALT | FN  |   RWIN  | RCTRL |
+            // | Rotary | (<-- Rotary switch) ----------------------------------------------------------- 
 
-        fn_layer {
+            bindings = <
+&kp ESC     &kp N1    &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7  &kp N8    &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp DELETE
+&kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T      &kp Y     &kp U   &kp I     &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
+&mo 3       &kp A     &kp S     &kp D      &kp F      &kp G      &kp H     &kp J   &kp K     &kp L      &kp SEMI  &kp SQT    &kp NUHS   &kp RET
+&kp LSHFT   &kp NUBS  &kp Z     &kp X      &kp C      &kp V      &kp B     &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &tog 3
+&kp LCTRL   &kp LGUI  &kp LALT  &lt 5 SPACE  &lt 5 SPACE  &lt 5 SPACE  &kp RALT  &mo 2   &kp RGUI  &kp RCTRL
+&kp C_MUTE
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+    };
+        layer_2 {
             // Function layer
             // ------------------------------------------------------------------------------------------
             // | RESET | F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |TRNS | DEL |
@@ -159,7 +180,7 @@
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
-        layer_2 {
+        layer_3 {
             bindings = <
 &trans  &trans                    &trans        &trans     &trans  &trans  &trans          &kp RA(N7)      &kp RA(N8)      &kp RA(N9)       &kp RA(N0)  &kp RA(MINUS)  &trans        &kp DELETE  &trans
 &trans  &kp RA(Q)                 &kp UP_ARROW  &kp RA(E)  &trans  &trans  &kp HOME        &kp END         &trans          &trans           &trans      &trans         &kp RA(RBKT)  &trans
@@ -172,7 +193,7 @@
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
-        layer_3 {
+        layer_4 {
             bindings = <
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &euro      &trans      &trans      &trans       &umlaut_ue   &trans       &umlaut_oe   &trans      &trans      &trans      &trans
@@ -182,7 +203,7 @@
 &trans
             >;
         };
-        layer_4 {
+        layer_5 {
             bindings = <
 &trans  &uc UC_SET_LINUX     &uc UC_SET_WIN_COMPOSE    &uc UC_SET_MACOS  &uc UC_SET_LINUX_ALT  &uc UC_SET_EMACS  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &uc 0x20AC 0  &trans  &trans  &trans  &trans  &uc UC_DE_UE  &trans  &uc UC_DE_OE  &trans  &trans  &trans  &trans
@@ -192,26 +213,5 @@
 &trans
             >;
         };
-layer_5 {
-            // Base layer
-            // ------------------------------------------------------------------------------------------
-            // | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
-            // | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |NUHS| ENTER   |
-            // | SHIFT |NUBS| Z |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |    Shift   | FN |
-            // |  LCTL  |  LWIN  |  LALT  | SPACE  | SPACE |    SPACE   |  RALT | FN  |   RWIN  | RCTRL |
-            // | Rotary | (<-- Rotary switch) ----------------------------------------------------------- 
 
-            bindings = <
-&kp ESC     &kp N1    &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7  &kp N8    &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp DELETE
-&kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T      &kp Y     &kp U   &kp I     &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
-&mo 2       &kp A     &kp S     &kp D      &kp F      &kp G      &kp H     &kp J   &kp K     &kp L      &kp SEMI  &kp SQT    &kp NUHS   &kp RET
-&kp LSHFT   &kp NUBS  &kp Z     &kp X      &kp C      &kp V      &kp B     &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &tog 2
-&kp LCTRL   &kp LGUI  &kp LALT  &lt 4 SPACE  &lt 4 SPACE  &lt 4 SPACE  &kp RALT  &mo 1   &kp RGUI  &kp RCTRL
-&kp C_MUTE
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-        };
-    };
 };
