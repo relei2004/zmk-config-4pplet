@@ -46,6 +46,21 @@
         };
     };
 
+    macros {
+        umlaut_ss: umlaut_ss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RC(A)>,
+                <&macro_wait_time 40>,
+                <&kp S>,
+                <&macro_wait_time 40>,
+                <&kp S>;
+
+            label = "UMLAUT_SS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
