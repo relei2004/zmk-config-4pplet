@@ -12,5 +12,5 @@ projects:
     - name: zmk-unicode
       remote: urob
       revision: v0.3
-  self:
+self:
     path: config
