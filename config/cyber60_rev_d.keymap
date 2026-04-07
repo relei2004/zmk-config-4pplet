@@ -112,7 +112,7 @@
 
         layer_3 {
             bindings = <
-&trans  &uc UC_SET_LINUX     &uc UC_SET_WIN_COMPOSE    &uc UC_SET_MACOS  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &uc UC_SET_LINUX     &uc UC_SET_WIN_COMPOSE    &uc UC_SET_MACOS  &uc UC_SET_LINUX_ALT  &uc UC_SET_EMACS  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &uc 0x20AC 0  &trans  &trans  &trans  &trans  &uc UC_DE_UE  &trans  &uc UC_DE_OE  &trans  &trans  &trans  &trans
 &trans  &uc UC_DE_AE &uc UC_DE_SS &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans
 &trans  &trans            &trans                     &trans             &trans  &trans  &trans  &trans        &trans  &trans        &trans  &trans  &trans  &trans
