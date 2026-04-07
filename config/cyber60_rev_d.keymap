@@ -10,6 +10,42 @@
   default-mode = <UC_MODE_LINUX>;  // Replace with desired input system.
 };
 / {
+macros {
+        umlaut_ae: umlaut_ae {
+            compatible = "zmk,behavior-macro";
+            label = "UMLAUT_AE";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp DQT &kp A>;
+        };
+
+        umlaut_oe: umlaut_oe {
+            compatible = "zmk,behavior-macro";
+            label = "UMLAUT_OE";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp DQT &kp O>;
+        };
+
+        umlaut_ue: umlaut_ue {
+            compatible = "zmk,behavior-macro";
+            label = "UMLAUT_UE";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp DQT &kp U>;
+        };
+
+        umlaut_ss: umlaut_ss {
+            compatible = "zmk,behavior-macro";
+            label = "UMLAUT_SS";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp S &kp S>;
+        };
+
+        euro: euro {
+            compatible = "zmk,behavior-macro";
+            label = "EURO";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp EQUAL &kp E>;
+        };
+    };
     combos {
         compatible = "zmk,combos";
 
@@ -111,6 +147,16 @@
         };
 
         layer_3 {
+            bindings = <
+&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
+&trans      &trans      &trans      &euro      &trans      &trans      &trans       &umlaut_ue   &trans       &umlaut_oe   &trans      &trans      &trans      &trans
+&trans      &umlaut_ae  &umlaut_ss  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
+&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
+&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
+&trans
+            >;
+
+        layer_4 {
             bindings = <
 &trans  &uc UC_SET_LINUX     &uc UC_SET_WIN_COMPOSE    &uc UC_SET_MACOS  &uc UC_SET_LINUX_ALT  &uc UC_SET_EMACS  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &uc 0x20AC 0  &trans  &trans  &trans  &trans  &uc UC_DE_UE  &trans  &uc UC_DE_OE  &trans  &trans  &trans  &trans
