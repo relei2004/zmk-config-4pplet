@@ -6,7 +6,7 @@
 
 #define FN1 1
 &uc {
-  default-mode = <UC_MODE_LINUX>;  // Replace with desired input system.
+  default-mode = <UC_MODE_WIN_COMPOSE>;  // Replace with desired input system.
 };
 / {
     keymap {
