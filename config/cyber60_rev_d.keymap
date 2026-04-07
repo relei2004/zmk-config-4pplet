@@ -58,8 +58,8 @@
 
         layer_2 {
             bindings = <
-&trans  &uc UC_SET_LINUX     &uc UC_MODE_WIN_COMPOSE    &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &uc 0x20AC 0  &trans  &trans  &trans  &trans  &uc UC_DE_UE  &trans  &uc UC_DE_OE  &trans  &trans  &trans  &trans
+&trans  &uc UC_SET_LINUX     &TRANS    &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &uc 0x20AC  &trans  &trans  &trans  &trans  &uc UC_DE_UE  &trans  &uc UC_DE_OE  &trans  &trans  &trans  &trans
 &trans  &uc UC_DE_AE &uc UC_DE_SS &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans
 &trans  &trans            &trans                     &trans             &trans  &trans  &trans  &trans        &trans  &trans        &trans  &trans  &trans  &trans
 &trans  &trans            &trans                     &trans  &trans  &trans  &trans  &trans     &trans  &trans
