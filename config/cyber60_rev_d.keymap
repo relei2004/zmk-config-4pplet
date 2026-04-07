@@ -128,15 +128,49 @@
             bindings = <
 &kp ESC     &kp N1    &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7  &kp N8    &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp DELETE
 &kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T      &kp Y     &kp U   &kp I     &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
-&mo 3       &kp A     &kp S     &kp D      &kp F      &kp G      &kp H     &kp J   &kp K     &kp L      &kp SEMI  &kp SQT    &kp NUHS   &kp RET
-&kp LSHFT   &kp NUBS  &kp Z     &kp X      &kp C      &kp V      &kp B     &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &tog 3
-&kp LCTRL   &kp LGUI  &kp LALT  &lt UML SPACE  &lt UML SPACE  &lt UML SPACE  &kp RALT  &mo 2   &kp RGUI  &kp RCTRL
+&mo 1       &kp A     &kp S     &kp D      &kp F      &kp G      &kp H     &kp J   &kp K     &kp L      &kp SEMI  &kp SQT    &kp NUHS   &kp RET
+&kp LSHFT   &kp NUBS  &kp Z     &kp X      &kp C      &kp V      &kp B     &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &tog 1
+&kp LCTRL   &kp LGUI  &kp LALT  &lt UML SPACE  &lt UML SPACE  &lt UML SPACE  &kp RALT  &mo 5   &kp RGUI  &kp RCTRL
 &kp C_MUTE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
-layer_1 {
+
+        layer_1 {
+            bindings = <
+&trans  &trans                    &trans        &trans     &trans  &trans  &trans          &kp RA(N7)      &kp RA(N8)      &kp RA(N9)       &kp RA(N0)  &kp RA(MINUS)  &trans        &kp DELETE  &trans
+&trans  &kp RA(Q)                 &kp UP_ARROW  &kp RA(E)  &trans  &trans  &kp HOME        &kp END         &trans          &trans           &trans      &trans         &kp RA(RBKT)  &trans
+&trans  &kp LEFT                  &kp DOWN      &kp RIGHT  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans      &trans         &trans        &trans
+&trans  &kp RA(NON_US_BACKSLASH)  &trans        &trans     &trans  &trans  &trans          &trans          &trans          &trans           &trans      &trans         &kp UP_ARROW  &trans
+&trans  &trans                    &trans        &trans     &trans  &trans  &trans          &kp LEFT        &kp DOWN_ARROW  &kp RIGHT
+&trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+        };
+
+        layer_2 {
+            bindings = <
+&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
+&trans      &trans      &trans      &euro      &trans      &trans      &trans       &umlaut_ue   &trans       &umlaut_oe   &trans      &trans      &trans      &trans
+&trans      &umlaut_ae  &umlaut_ss  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
+&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
+&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
+&trans
+            >;
+        };
+        layer_3 {
+            bindings = <
+&trans  &uc UC_SET_LINUX     &uc UC_SET_WIN_COMPOSE    &uc UC_SET_MACOS  &uc UC_SET_LINUX_ALT  &uc UC_SET_EMACS  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &uc 0x20AC 0  &trans  &trans  &trans  &trans  &uc UC_DE_UE  &trans  &uc UC_DE_OE  &trans  &trans  &trans  &trans
+&trans  &uc UC_DE_AE &uc UC_DE_SS &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans            &trans                     &trans             &trans  &trans  &trans  &trans        &trans  &trans        &trans  &trans  &trans  &trans
+&trans  &trans            &trans                     &trans  &trans  &trans  &trans  &trans     &trans  &trans
+&trans
+            >;
+        };
+layer_win_4 {
             // Base layer
             // ------------------------------------------------------------------------------------------
             // | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
@@ -149,16 +183,16 @@ layer_1 {
             bindings = <
 &kp ESC     &kp N1    &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7  &kp N8    &kp N9     &kp N0    &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp DELETE
 &kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T      &kp Y     &kp U   &kp I     &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
-&mo 3       &kp A     &kp S     &kp D      &kp F      &kp G      &kp H     &kp J   &kp K     &kp L      &kp SEMI  &kp SQT    &kp NUHS   &kp RET
-&kp LSHFT   &kp NUBS  &kp Z     &kp X      &kp C      &kp V      &kp B     &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &tog 3
-&kp LCTRL   &kp LGUI  &kp LALT  &lt 5 SPACE  &lt 5 SPACE  &lt 5 SPACE  &kp RALT  &mo 2   &kp RGUI  &kp RCTRL
+&mo 1       &kp A     &kp S     &kp D      &kp F      &kp G      &kp H     &kp J   &kp K     &kp L      &kp SEMI  &kp SQT    &kp NUHS   &kp RET
+&kp LSHFT   &kp NUBS  &kp Z     &kp X      &kp C      &kp V      &kp B     &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &tog 1
+&kp LCTRL   &kp LGUI  &kp LALT  &lt 5 SPACE  &lt 5 SPACE  &lt 5 SPACE  &kp RALT  &mo 5   &kp RGUI  &kp RCTRL
 &kp C_MUTE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
-        layer_2 {
+layer_fn_5 {
             // Function layer
             // ------------------------------------------------------------------------------------------
             // | RESET | F1 |  F2 |  F3 |  F4 |  F5 |  F6 |  F7 |  F8 |  F9 | F10 | F11 | F12 |TRNS | DEL |
@@ -172,46 +206,11 @@ layer_1 {
 &sys_reset   &kp F1    &kp F2           &kp F3           &kp F4           &kp F5           &kp F6           &kp F7           &kp F8           &kp F9     &kp F10  &kp F11  &kp F12  &kp DELETE  &kp DEL
 &bt BT_CLR   &trans    &kp UP           &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans           &trans     &trans   &trans   &trans   &trans
 &bootloader  &kp LEFT  &kp DOWN         &kp RIGHT        &trans           &trans           &kp LEFT         &kp DOWN         &kp UP_ARROW     &kp RIGHT  &to 0   &to 0   &trans   &trans
-&trans       &trans    &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans     &trans   &to 5   &trans   &trans
+&trans       &trans    &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans     &to 4   &to 4   &trans   &trans
 &trans       &trans    &trans           &trans           &trans           &trans           &trans           &trans           &trans           &trans
 &kp C_PP
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
-
-        layer_3 {
-            bindings = <
-&trans  &trans                    &trans        &trans     &trans  &trans  &trans          &kp RA(N7)      &kp RA(N8)      &kp RA(N9)       &kp RA(N0)  &kp RA(MINUS)  &trans        &kp DELETE  &trans
-&trans  &kp RA(Q)                 &kp UP_ARROW  &kp RA(E)  &trans  &trans  &kp HOME        &kp END         &trans          &trans           &trans      &trans         &kp RA(RBKT)  &trans
-&trans  &kp LEFT                  &kp DOWN      &kp RIGHT  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans      &trans         &trans        &trans
-&trans  &kp RA(NON_US_BACKSLASH)  &trans        &trans     &trans  &trans  &trans          &trans          &trans          &trans           &trans      &trans         &kp UP_ARROW  &trans
-&trans  &trans                    &trans        &trans     &trans  &trans  &trans          &kp LEFT        &kp DOWN_ARROW  &kp RIGHT
-&trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
-        };
-
-        layer_4 {
-            bindings = <
-&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
-&trans      &trans      &trans      &euro      &trans      &trans      &trans       &umlaut_ue   &trans       &umlaut_oe   &trans      &trans      &trans      &trans
-&trans      &umlaut_ae  &umlaut_ss  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
-&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
-&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
-&trans
-            >;
-        };
-        layer_5 {
-            bindings = <
-&trans  &uc UC_SET_LINUX     &uc UC_SET_WIN_COMPOSE    &uc UC_SET_MACOS  &uc UC_SET_LINUX_ALT  &uc UC_SET_EMACS  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &uc 0x20AC 0  &trans  &trans  &trans  &trans  &uc UC_DE_UE  &trans  &uc UC_DE_OE  &trans  &trans  &trans  &trans
-&trans  &uc UC_DE_AE &uc UC_DE_SS &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans
-&trans  &trans            &trans                     &trans             &trans  &trans  &trans  &trans        &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans            &trans                     &trans  &trans  &trans  &trans  &trans     &trans  &trans
-&trans
-            >;
-        };
-
 };
