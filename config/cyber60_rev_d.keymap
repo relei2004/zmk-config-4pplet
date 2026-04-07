@@ -5,7 +5,9 @@
 #include <behaviors/unicode.dtsi>
 
 #define FN1 1
-
+&uc {
+  default-mode = <UC_MODE_LINUX>;  // Replace with desired input system.
+};
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -56,7 +58,7 @@
 
         layer_2 {
             bindings = <
-&trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &uc UC_SET_LINUX     &uc UC_MODE_WIN_COMPOSE    &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &uc 0x20AC 0  &trans  &trans  &trans  &trans  &uc UC_DE_UE  &trans  &uc UC_DE_OE  &trans  &trans  &trans  &trans
 &trans  &uc UC_DE_AE &uc UC_DE_SS &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans
 &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans
