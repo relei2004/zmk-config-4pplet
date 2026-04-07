@@ -68,7 +68,7 @@
             bindings
                 = <&kp RCTRL>
                 , <&kp EQUAL>
-                , <&kp e>;
+                , <&kp E>;
         };
     };
 
