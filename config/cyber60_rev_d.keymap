@@ -5,7 +5,7 @@
 #include <behaviors/unicode.dtsi>
 
 #define FN1 1
-#define UML 4
+#define UML 2
 &uc {
   default-mode = <UC_MODE_LINUX>;  // Replace with desired input system.
 };
@@ -185,7 +185,7 @@ layer_win_4 {
 &kp TAB     &kp Q     &kp W     &kp E      &kp R      &kp T      &kp Y     &kp U   &kp I     &kp O      &kp P     &kp LBKT   &kp RBKT   &kp BSLH
 &mo 1       &kp A     &kp S     &kp D      &kp F      &kp G      &kp H     &kp J   &kp K     &kp L      &kp SEMI  &kp SQT    &kp NUHS   &kp RET
 &kp LSHFT   &kp NUBS  &kp Z     &kp X      &kp C      &kp V      &kp B     &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT  &tog 1
-&kp LCTRL   &kp LGUI  &kp LALT  &lt 5 SPACE  &lt 5 SPACE  &lt 5 SPACE  &kp RALT  &mo 5   &kp RGUI  &kp RCTRL
+&kp LCTRL   &kp LGUI  &kp LALT  &lt 3 SPACE  &lt 3 SPACE  &lt 3 SPACE  &kp RALT  &mo 5   &kp RGUI  &kp RCTRL
 &kp C_MUTE
             >;
 
