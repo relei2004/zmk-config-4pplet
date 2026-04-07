@@ -155,7 +155,7 @@ macros {
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
 &trans
             >;
-
+        };
         layer_4 {
             bindings = <
 &trans  &uc UC_SET_LINUX     &uc UC_SET_WIN_COMPOSE    &uc UC_SET_MACOS  &uc UC_SET_LINUX_ALT  &uc UC_SET_EMACS  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
