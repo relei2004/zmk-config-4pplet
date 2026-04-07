@@ -10,7 +10,6 @@
   default-mode = <UC_MODE_LINUX>;  // Replace with desired input system.
 };
 / {
-/ {
     macros {
         umlaut_ae: umlaut_ae {
             compatible = "zmk,behavior-macro";
