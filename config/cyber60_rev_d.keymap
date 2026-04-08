@@ -81,7 +81,7 @@
             tap-ms = <40>;
             bindings
                 = <&kp DQT>
-                , <&kp A>;
+                , <&kp Y>;
         };
 
         umlaut_oe_win: umlaut_oe_win {
