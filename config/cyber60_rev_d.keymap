@@ -91,7 +91,7 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                =  <&kp DQT>
+                = <&kp DQT>
                 , <&kp O>;
         };
 
@@ -102,7 +102,7 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                =<&kp DQT>
+                = <&kp DQT>
                 , <&kp U>;
         };
 
@@ -113,7 +113,7 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&kp RA(s)>;
+                = <&kp RA(S)>;
         };
 
         euro: euro_win {
@@ -123,7 +123,7 @@
             wait-ms = <40>;
             tap-ms = <40>;
             bindings
-                = <&kp RA(5)>;
+                = <&kp RA(N5)>;
         };
 
 
