@@ -241,7 +241,7 @@ layer_win_3 {
         };
         layer_4 {
  bindings = <
-&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
+&trans      &kp Z      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &euro_win      &trans      &trans      &trans       &umlaut_ue_win   &trans       &umlaut_oe_win   &trans      &trans      &trans      &trans
 &trans      &umlaut_ae_win  &umlaut_ss_win  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
