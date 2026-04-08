@@ -73,7 +73,7 @@
 
 
 
-        umlaut_ae: umlaut_ae_win {
+        umlaut_ae_win: umlaut_ae_win {
             compatible = "zmk,behavior-macro";
             label = "UMLAUT_AE";
             #binding-cells = <0>;
@@ -84,7 +84,7 @@
                 , <&kp A>;
         };
 
-        umlaut_oe: umlaut_oe_win {
+        umlaut_oe_win: umlaut_oe_win {
             compatible = "zmk,behavior-macro";
             label = "UMLAUT_OE";
             #binding-cells = <0>;
@@ -95,7 +95,7 @@
                 , <&kp O>;
         };
 
-        umlaut_ue: umlaut_ue_win {
+        umlaut_ue_win: umlaut_ue_win {
             compatible = "zmk,behavior-macro";
             label = "UMLAUT_UE";
             #binding-cells = <0>;
@@ -106,7 +106,7 @@
                 , <&kp U>;
         };
 
-        umlaut_ss: umlaut_ss_win {
+        umlaut_ss_win: umlaut_ss_win {
             compatible = "zmk,behavior-macro";
             label = "UMLAUT_SS";
             #binding-cells = <0>;
@@ -116,7 +116,7 @@
                 = <&kp RA(S)>;
         };
 
-        euro: euro_win {
+        euro_win: euro_win {
             compatible = "zmk,behavior-macro";
             label = "EURO";
             #binding-cells = <0>;
