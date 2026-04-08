@@ -70,6 +70,63 @@
                 , <&kp EQUAL>
                 , <&kp E>;
         };
+
+
+
+        umlaut_ae: umlaut_ae_win {
+            compatible = "zmk,behavior-macro";
+            label = "UMLAUT_AE";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp DQT>
+                , <&kp A>;
+        };
+
+        umlaut_oe: umlaut_oe_win {
+            compatible = "zmk,behavior-macro";
+            label = "UMLAUT_OE";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                =  <&kp DQT>
+                , <&kp O>;
+        };
+
+        umlaut_ue: umlaut_ue_win {
+            compatible = "zmk,behavior-macro";
+            label = "UMLAUT_UE";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                =<&kp DQT>
+                , <&kp U>;
+        };
+
+        umlaut_ss: umlaut_ss_win {
+            compatible = "zmk,behavior-macro";
+            label = "UMLAUT_SS";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp RA(s)>;
+        };
+
+        euro: euro_win {
+            compatible = "zmk,behavior-macro";
+            label = "EURO";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp RA(5)>;
+        };
+
+
     };
 
     combos {
@@ -183,12 +240,12 @@ layer_win_3 {
         
         };
         layer_4 {
-            bindings = <
-&trans  &uc UC_SET_LINUX     &uc UC_SET_WIN_COMPOSE    &uc UC_SET_MACOS  &uc UC_SET_LINUX_ALT  &uc UC_SET_EMACS  &uc UC_SET_WIN_ALT  &trans     &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &uc 0x20AC 0  &trans  &trans  &trans  &trans  &uc UC_DE_UE  &trans  &uc UC_DE_OE  &trans  &trans  &trans  &trans
-&trans  &uc UC_DE_AE &uc UC_DE_SS &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans  &trans  &trans  &trans
-&trans  &trans            &trans                     &trans             &trans  &trans  &trans  &trans        &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans            &trans                     &trans  &trans  &trans  &trans  &trans     &trans  &trans
+ bindings = <
+&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
+&trans      &trans      &trans      &euro_win      &trans      &trans      &trans       &umlaut_ue_win   &trans       &umlaut_oe_win   &trans      &trans      &trans      &trans
+&trans      &umlaut_ae_win  &umlaut_ss_win  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
+&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
+&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
 &trans
             >;
         };
