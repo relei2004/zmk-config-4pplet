@@ -75,7 +75,7 @@
 
         umlaut_ae_win: umlaut_ae_win {
             compatible = "zmk,behavior-macro";
-            label = "UMLAUT_AE";
+            label = "UMLAUT_AE_WIN";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
@@ -86,7 +86,7 @@
 
         umlaut_oe_win: umlaut_oe_win {
             compatible = "zmk,behavior-macro";
-            label = "UMLAUT_OE";
+            label = "UMLAUT_OE_WIN";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
@@ -97,7 +97,7 @@
 
         umlaut_ue_win: umlaut_ue_win {
             compatible = "zmk,behavior-macro";
-            label = "UMLAUT_UE";
+            label = "UMLAUT_UE_WIN";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
@@ -108,7 +108,7 @@
 
         umlaut_ss_win: umlaut_ss_win {
             compatible = "zmk,behavior-macro";
-            label = "UMLAUT_SS";
+            label = "UMLAUT_SS_WIN";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
@@ -118,7 +118,7 @@
 
         euro_win: euro_win {
             compatible = "zmk,behavior-macro";
-            label = "EURO";
+            label = "EURO_WIN";
             #binding-cells = <0>;
             wait-ms = <40>;
             tap-ms = <40>;
