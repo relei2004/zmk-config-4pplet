@@ -199,7 +199,7 @@
             bindings = <
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &euro      &trans      &trans      &trans       &umlaut_ue   &trans       &umlaut_oe   &trans      &trans      &trans      &trans
-&trans      &umlaut_ae  &umlaut_ss  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
+&trans      &umlaut_ae  &umlaut_ss  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &kp GRAVE      &trans      &trans
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
 &trans
@@ -231,7 +231,7 @@ layer_win_2 {
  bindings = <
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &euro_win      &trans      &trans      &trans       &umlaut_ue_win   &trans       &umlaut_oe_win   &trans      &trans      &trans      &trans
-&trans      &umlaut_ae_win  &umlaut_ss_win  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
+&trans      &umlaut_ae_win  &umlaut_ss_win  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &kp GRAVE      &trans      &trans
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
 &trans
