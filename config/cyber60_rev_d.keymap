@@ -198,9 +198,9 @@
         layer_1 {
             bindings = <
 &kp GRAVE      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
-&trans      &trans      &trans      &euro      &trans      &trans      &trans       &umlaut_ue   &trans       &umlaut_oe   &trans      &trans      &trans      &trans
-&trans      &umlaut_ae  &umlaut_ss  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &kp TILDE      &kp TILDE      &trans      &trans
-&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
+&kp GRAVE      &trans      &trans      &euro      &trans      &trans      &trans       &umlaut_ue   &trans       &umlaut_oe   &kp EQUAL      &trans      &trans      &trans
+&trans      &umlaut_ae  &umlaut_ss  &trans      &trans      &trans      &trans       &kp LBKT       &kp RBKT       &kp NUHS       &kp MINUS      &kp TILDE      &trans      &trans
+&trans      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7       &kp N8       &kp N9       &kp N0       &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
 &trans
             >;
@@ -230,9 +230,9 @@ layer_win_2 {
         layer_3 {
  bindings = <
 &kp GRAVE      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
-&trans      &trans      &trans      &euro_win      &trans      &trans      &trans       &umlaut_ue_win   &trans       &umlaut_oe_win   &trans      &trans      &trans      &trans
+&trans      &trans      &trans      &euro_win      &trans      &trans      &trans       &umlaut_ue_win   &trans       &umlaut_oe_win   &kp EQUAL      &trans      &trans      &trans
 &trans      &umlaut_ae_win  &umlaut_ss_win  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &kp TILDE         &kp TILDE   &trans      &trans
-&trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans
+&trans      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7       &kp N8       &kp N9       &kp N0       &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
 &trans
             >;
