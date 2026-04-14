@@ -199,7 +199,7 @@
             bindings = <
 &kp GRAVE      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
 &kp GRAVE      &trans      &trans      &euro      &trans      &trans      &trans       &umlaut_ue   &trans       &umlaut_oe   &kp EQUAL      &kp BSLH      &kp BACKSPACE      &trans
-&trans      &umlaut_ae  &umlaut_ss  &trans      &trans      &trans      &trans       &kp LBKT       &kp RBKT       &kp NUHS       &kp MINUS      &kp TILDE      &trans      &trans
+&trans      &umlaut_ae  &umlaut_ss  &trans      &trans      &trans      &trans       &kp LBKT       &kp RBKT       &kp SQT       &kp MINUS      &kp TILDE      &trans      &trans
 &mt LEFT_SHIFT N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7       &kp N8       &kp N9       &kp N0      &mt RIGHT_SHIFT SLASH      &trans      &trans      &trans
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
 &trans
@@ -231,7 +231,7 @@ layer_win_2 {
  bindings = <
 &kp GRAVE      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans       &trans      &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &euro_win      &trans      &trans      &trans       &umlaut_ue_win   &trans       &umlaut_oe_win   &kp EQUAL      &kp BSLH      &kp BACKSPACE      &trans
-&trans      &umlaut_ae_win  &umlaut_ss_win  &trans      &trans      &trans      &trans       &trans       &trans       &trans       &kp TILDE         &kp TILDE   &trans      &trans
+&trans      &umlaut_ae_win  &umlaut_ss_win  &trans      &trans      &trans      &trans       &kp LBKT      &kp RBKT       &kp SQT       &kp MINUS         &kp TILDE   &trans      &trans
 &mt LEFT_SHIFT N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7       &kp N8       &kp N9       &kp N0      &mt RIGHT_SHIFT SLASH     &trans      &trans      &trans
 &trans      &trans      &trans      &trans      &trans      &trans      &trans       &trans       &trans       &trans
 &trans
