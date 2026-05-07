@@ -17,5 +17,3 @@ include:
 #  - board: cyber60_rev_b
 #  - board: cyber60_rev_c
   - board: cyber60_rev_d
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
